@@ -1,0 +1,8 @@
+apiVersion: velero.io/v1
+kind: Restore
+metadata:
+  name: restore-drill-test
+  namespace: velero
+spec:
+  backupName: daily-cluster-backup-latest
+  restorePVs: true
